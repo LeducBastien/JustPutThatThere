@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour {
     private void Update()
     {
         timer += Time.deltaTime;
+        if (Input.anyKey)
+            timer = 0;
         if (timer > timeBeforeHelp)
             helpButtonInstance.SetActive(true);
     }
