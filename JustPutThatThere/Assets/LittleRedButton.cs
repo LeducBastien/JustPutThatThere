@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class LittleRedButton : MonoBehaviour {
 
-    [SerializeField] GameObject bigRedButton;
+    [SerializeField] GameObject lollipopButton;
 
-    public void SpawnBigRedButton ()
+    public void SpawnLollipopButton ()
     {
-        bigRedButton.SetActive(true);
+        lollipopButton.SetActive(true);
     }
 
 	// Use this for initialization
