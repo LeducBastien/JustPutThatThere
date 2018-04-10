@@ -19,6 +19,8 @@ public class Musicolor : MonoBehaviour {
     {
         codes.Add("0102010");
         actions.Add(UnlockClapetKey);
+
+        value = "";
     }
 
     public void Reset()
@@ -34,6 +36,7 @@ public class Musicolor : MonoBehaviour {
             StartTimer();
         }
         value += digit;
+        timer = 0;
         CompareCodes();
     }
 
