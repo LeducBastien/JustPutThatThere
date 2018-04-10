@@ -20,7 +20,7 @@ public class NumPad : MonoBehaviour {
     NumPad()
     {
         codes.Add("80085");
-        actions.Add(UnlockCeilingTrap);
+        actions.Add(UnlockMachinegun);
 
         codes.Add("996678");
         actions.Add(UnlockCeilingTrap);
@@ -72,7 +72,6 @@ public class NumPad : MonoBehaviour {
     private void UnlockBigRedButton ()
     {
         bigRedButton.SetActive(true);
-        print("unlocking BRB");
     }
 
     // Use this for initialization
