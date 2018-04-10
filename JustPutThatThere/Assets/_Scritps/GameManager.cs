@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance;
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour {
 
     private void Awake()
     {
+		DontDestroyOnLoad (this.gameObject);
         if (Instance) return;
         Instance = this;
     }
@@ -26,4 +28,14 @@ public class GameManager : MonoBehaviour {
             helpButtonInstance.SetActive(true);
     }
 
+
+	public void LoadTitleScreen () {
+		SceneManager.LoadScene (0);
+	}
+	public void LoadOptions () {
+		SceneManager.LoadScene (1);
+	}
+	public void LoadMainGame () {
+		SceneManager.LoadScene (2);
+	}
 }
