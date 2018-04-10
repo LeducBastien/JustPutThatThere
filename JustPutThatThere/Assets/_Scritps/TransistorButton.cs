@@ -6,13 +6,12 @@ using UnityEngine.EventSystems;
 
 public class TransistorButton : MonoBehaviour, IPointerDownHandler {
  
-    private const int MAX_POWER = 90;
-    private const float STARTING_ANGLE = 45;
+    //private const int MAX_POWER = 90;
 
-    private const float DISTANCE_MULTIPLIER = 1f;
+    private const float ANGLE_MULTIPLIER = 0.5f;
 
-    private float power = 0;
-    private float lastX;
+    private float angle = 0;
+    private float lastAngle;
 
     private Action doAction;
 
@@ -28,7 +27,7 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        lastX = Input.mousePosition.x;
+        lastAngle = AngleTo(Input.mousePosition, transform.position);
         doAction = DoActionGrabbed;
     }
 
@@ -38,11 +37,23 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
 
     private void DoActionGrabbed ()
     {
-        var currentX = Input.mousePosition.x;
-        power += (currentX - lastX) * DISTANCE_MULTIPLIER;
-        if (power < 0) power = 0;
-        else if (power >= MAX_POWER) power = MAX_POWER;
-        lastX = currentX;
+        Vector3 mousePosition = Input.mousePosition;
+        Vector3 buttonPosition = transform.position;
+        float currentAngle = AngleTo(mousePosition, buttonPosition);
+        
+        if (Mathf.Abs(currentAngle - lastAngle) > 180)
+        {
+            float angleDistance;
+            angleDistance = currentAngle - lastAngle;
+            if (angleDistance < -180) angleDistance += 360;
+            else if (angleDistance > 180) angleDistance -= 360;
+            angle += (angleDistance) * ANGLE_MULTIPLIER;
+        }
+        else
+        {
+            angle += (currentAngle - lastAngle) * ANGLE_MULTIPLIER;
+        }
+        lastAngle = currentAngle;
         UpdateDisplay();
         if (Input.GetMouseButtonUp(0)) {
             doAction = DoActionVoid;
@@ -51,7 +62,12 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
 
     private void UpdateDisplay ()
     {
-        float angle = STARTING_ANGLE - power;
-        transform.eulerAngles = Vector3.forward * angle;
+        float neededAngle = angle;
+        transform.eulerAngles = Vector3.forward * neededAngle;
+    }
+
+    private float AngleTo (Vector3 mousePosition, Vector3 buttonPosition)
+    {
+        return Mathf.Atan2(mousePosition.y - buttonPosition.y, mousePosition.x - buttonPosition.x) * Mathf.Rad2Deg;
     }
 }
