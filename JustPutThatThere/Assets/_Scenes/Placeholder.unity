@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e590611bdd4e8f246964b2a4a2064d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerInstance: {fileID: 0}
+  TriggerInstance: {fileID: 1105488898}
   MachineGunDoorInstance: {fileID: 0}
 --- !u!224 &530925938 stripped
 RectTransform:
@@ -820,6 +820,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 244308463}
     m_Modifications:
+    - target: {fileID: 114286355123428708, guid: c7d5766ea53aeff4ca21e583e3eed615,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224105012694711710, guid: c7d5766ea53aeff4ca21e583e3eed615,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -910,9 +915,50 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114286355123428708, guid: c7d5766ea53aeff4ca21e583e3eed615,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114286355123428708, guid: c7d5766ea53aeff4ca21e583e3eed615,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114286355123428708, guid: c7d5766ea53aeff4ca21e583e3eed615,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 476270127}
+    - target: {fileID: 114286355123428708, guid: c7d5766ea53aeff4ca21e583e3eed615,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114286355123428708, guid: c7d5766ea53aeff4ca21e583e3eed615,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7d5766ea53aeff4ca21e583e3eed615, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1105488898 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1259705365009316, guid: 8c8737a5985b4904aaa7783d99fb63d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1799621997}
+--- !u!114 &1105488902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1105488898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf5d40dbf6136468eecd6c655ae017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1196390195 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224676293952725888, guid: 7ca07a408c81d014b8645c64123853ba,
@@ -1263,6 +1309,10 @@ Prefab:
         type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259705365009316, guid: 8c8737a5985b4904aaa7783d99fb63d9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114490272550524406, guid: 8c8737a5985b4904aaa7783d99fb63d9, type: 2}
