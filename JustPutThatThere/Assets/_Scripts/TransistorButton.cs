@@ -75,7 +75,6 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
                 if (screwage <= REQUIRED_SCREWAGE)
                 {
                     AttachClamp();
-                    print("attached");
                 }
             }
         }
