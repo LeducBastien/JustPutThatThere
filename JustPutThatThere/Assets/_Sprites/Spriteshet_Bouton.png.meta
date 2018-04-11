@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: f3948bed2993044469d07fd97388bd13
+timeCreated: 1523438238
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Spriteshet_Bouton_0
+    21300002: Spriteshet_Bouton_1
+    21300004: Spriteshet_Bouton_2
+    21300006: Spriteshet_Bouton_3
+    21300008: Spriteshet_Bouton_4
+    21300010: Spriteshet_Bouton_5
+    21300012: Spriteshet_Bouton_6
+    21300014: Spriteshet_Bouton_7
+    21300016: Spriteshet_Bouton_8
+    21300018: Spriteshet_Bouton_9
+    21300020: Spriteshet_Bouton_10
+    21300022: Spriteshet_Bouton_11
+    21300024: Spriteshet_Bouton_12
+    21300026: Spriteshet_Bouton_13
+    21300028: Spriteshet_Bouton_14
+    21300030: Spriteshet_Bouton_15
+    21300032: Spriteshet_Bouton_16
+    21300034: Spriteshet_Bouton_17
+    21300036: Spriteshet_Bouton_18
+    21300038: Spriteshet_Bouton_19
+    21300040: Spriteshet_Bouton_20
+    21300042: Spriteshet_Bouton_21
+    21300044: Spriteshet_Bouton_22
+    21300046: Spriteshet_Bouton_23
+    21300048: Spriteshet_Bouton_24
+    21300050: Spriteshet_Bouton_25
+    21300052: Spriteshet_Bouton_26
+    21300054: Spriteshet_Bouton_27
+    21300056: Spriteshet_Bouton_28
+    21300058: Spriteshet_Bouton_29
+    21300060: Spriteshet_Bouton_30
+    21300062: Spriteshet_Bouton_31
+    21300064: Spriteshet_Bouton_32
+    21300066: Spriteshet_Bouton_33
+    21300068: Spriteshet_Bouton_34
+    21300070: Spriteshet_Bouton_35
+    21300072: Spriteshet_Bouton_36
+    21300074: Spriteshet_Bouton_37
+    21300076: Spriteshet_Bouton_38
+    21300078: Spriteshet_Bouton_39
+    21300080: Spriteshet_Bouton_40
+    21300082: Spriteshet_Bouton_41
+    21300084: Spriteshet_Bouton_42
+    21300086: Spriteshet_Bouton_43
+    21300088: Spriteshet_Bouton_44
+    21300090: Spriteshet_Bouton_45
+    21300092: Spriteshet_Bouton_46
+    21300094: Spriteshet_Bouton_47
+    21300096: Spriteshet_Bouton_48
+    21300098: Spriteshet_Bouton_49
+    21300100: Spriteshet_Bouton_50
+    21300102: Spriteshet_Bouton_51
+    21300104: Spriteshet_Bouton_52
+    21300106: Spriteshet_Bouton_53
+    21300108: Spriteshet_Bouton_54
+    21300110: Spriteshet_Bouton_55
+    21300112: Spriteshet_Bouton_56
+    21300114: Spriteshet_Bouton_57
+    21300116: Spriteshet_Bouton_58
+    21300118: Spriteshet_Bouton_59
+    21300120: Spriteshet_Bouton_60
+    21300122: Spriteshet_Bouton_61
+    21300124: Spriteshet_Bouton_62
+    21300126: Spriteshet_Bouton_63
+    21300128: Spriteshet_Bouton_64
+    21300130: Spriteshet_Bouton_65
+    21300132: Spriteshet_Bouton_66
+    21300134: Spriteshet_Bouton_67
+    21300136: Spriteshet_Bouton_68
+    21300138: Spriteshet_Bouton_69
+    21300140: Spriteshet_Bouton_70
+    21300142: Spriteshet_Bouton_71
+    21300144: Spriteshet_Bouton_72
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 665
+        width: 252
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 917
+        width: 53
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_2
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 918
+        width: 53
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_3
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 920
+        width: 53
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_4
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 928
+        width: 176
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_5
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 928
+        width: 176
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_6
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 419
+        width: 92
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_7
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 817
+        width: 53
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_8
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 815
+        width: 53
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 814
+        width: 53
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_10
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 821
+        width: 176
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_11
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 821
+        width: 176
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 677
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_13
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 677
+        width: 88
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_14
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 676
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_15
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 693
+        width: 44
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_16
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 696
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_17
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 693
+        width: 44
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_18
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 755
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_19
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 757
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_20
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 664
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_21
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 664
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_22
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 499
+        width: 189
+        height: 144
+      alignment: 9
+      pivot: {x: 0.67873096, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_23
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 499
+        width: 162
+        height: 144
+      alignment: 9
+      pivot: {x: 0.6137379, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_24
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 499
+        width: 130
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_25
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 499
+        width: 130
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_26
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 580
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_27
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 580
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_28
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 493
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 493
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_30
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 372
+        width: 80
+        height: 52
+      alignment: 9
+      pivot: {x: 0.807092, y: 0.3228302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_31
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 362
+        width: 52
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4999994, y: 0.8664166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_32
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 382
+        width: 52
+        height: 72
+      alignment: 9
+      pivot: {x: 0.44094378, y: 0.1587855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_33
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 366
+        width: 52
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0.10191684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_34
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 382
+        width: 84
+        height: 52
+      alignment: 9
+      pivot: {x: 0.15269324, y: 0.2933021}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_35
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 403
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_36
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 403
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_37
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 237
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_38
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 250
+        width: 59
+        height: 97
+      alignment: 9
+      pivot: {x: 0.4999995, y: 0.37336305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_39
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 250
+        width: 66
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5232646, y: 0.41175404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_40
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 61
+        width: 133
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_41
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 12
+        width: 137
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1995832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_42
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 324
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_43
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 324
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_44
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 324
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_45
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 241
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_46
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 12
+        width: 136
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26218405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_47
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 292
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_48
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 291
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_49
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 291
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_50
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 258
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_51
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 257
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_52
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 257
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_53
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 224
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_54
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 223
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_55
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 223
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_56
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_57
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 119
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_58
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 12
+        width: 137
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_59
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 174
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_60
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 174
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_61
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 174
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_62
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 133
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_63
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 133
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_64
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 133
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 39
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_66
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 46
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_67
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 93
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_68
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 93
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_69
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 93
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_70
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 52
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_71
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 52
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spriteshet_Bouton_72
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 52
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
