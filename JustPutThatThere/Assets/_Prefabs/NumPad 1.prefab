@@ -1398,6 +1398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   display: {fileID: 114330489670215018}
   bigRedButton: {fileID: 0}
+  gatlingBase: {fileID: 0}
 --- !u!114 &114678314217807830
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gatlingDoor: {fileID: 0}
   gatlingController: {fileID: 0}
-  onSprite: {fileID: 0}
+  onSprite: {fileID: 21300078, guid: f3948bed2993044469d07fd97388bd13, type: 3}
 --- !u!114 &114659276529232684
 MonoBehaviour:
   m_ObjectHideFlags: 1

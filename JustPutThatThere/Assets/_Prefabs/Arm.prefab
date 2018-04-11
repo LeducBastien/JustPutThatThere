@@ -55,8 +55,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3c965972bd1534898b6a5efd253e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onClamp: 0
+  clampAttached: 0
   thread: {fileID: 1869577874074644}
   clamp: {fileID: 0}
+  baby: {fileID: 0}
+  hole: {fileID: 0}
+  canvasTransform: {fileID: 0}
 --- !u!114 &114838238742101912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,8 +111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -319, y: 313}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -294, y: 313}
+  m_SizeDelta: {x: 140, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224664024473782236
 RectTransform:

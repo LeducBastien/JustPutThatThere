@@ -37,6 +37,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224866450333360270}
+  - component: {fileID: 114807648491393576}
   m_Layer: 5
   m_Name: Gatling
   m_TagString: Untagged
@@ -82,6 +83,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114807648491393576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895139168187046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfaf85fe2666f2d43909b8f4a9d3fcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222024648877274048
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -122,6 +134,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327, y: 77}
+  m_AnchoredPosition: {x: 327, y: 84}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
