@@ -1,4 +1,0 @@
-sceneSetups:
-- path: JustPutThatThere/Assets/_Scenes/02_MainScene_copy sandy.unity
-  isLoaded: 1
-  isActive: 1
