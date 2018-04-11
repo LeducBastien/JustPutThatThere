@@ -30,7 +30,10 @@ public class GameManager : MonoBehaviour {
         if (Input.anyKey)
             timer = 0;
         if (timer > timeBeforeHelp)
+        {
             helpButtonInstance.SetActive(true);
+            helpButtonInstance.GetComponent<Animator>().enabled = true;
+        }
     }
 
 
