@@ -16,14 +16,15 @@ public class NumPad : MonoBehaviour {
 
     [SerializeField] Text display;
     [SerializeField] GameObject bigRedButton;
+    [SerializeField] GatlingBase gatlingBase;
 
     NumPad()
     {
         codes.Add("80085");
-        actions.Add(UnlockMachinegun);
+        actions.Add(UnlockCeilingTrap);
 
         codes.Add("996678");
-        actions.Add(UnlockCeilingTrap);
+        actions.Add(UnlockMachinegun);
 
         codes.Add("666");
         actions.Add(UnlockBigRedButton);
@@ -61,7 +62,10 @@ public class NumPad : MonoBehaviour {
 
     private void UnlockMachinegun ()
     {
-        print("unlocking machinegun");
+        if(GameManager.Instance.gatlingDoorOpen)
+        {
+            gatlingBase.StartEntrance();
+        }
     }
 
     private void UnlockCeilingTrap ()

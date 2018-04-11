@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:JustPutThatThere/Assets/_Sprites/UI/logo.controller.meta
 guid: e8fca6faf994c404cbf82c2ec9c9967b
 timeCreated: 1523436349
+=======
+guid: 4214c13f471dac34796c884b6e5818cd
+folderAsset: yes
+timeCreated: 1523438236
+>>>>>>> dcf79c552b8a589675868a9e6d9c218848ef3333:JustPutThatThere/Assets/_Sprites/Machine.meta
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}

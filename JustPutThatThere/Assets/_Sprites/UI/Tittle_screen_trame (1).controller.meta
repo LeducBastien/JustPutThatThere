@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:JustPutThatThere/Assets/_Sprites/UI/Tittle_screen_trame (1).controller.meta
 guid: d2f5b528c98ca9c44aef1903811de38f
 timeCreated: 1523435897
+=======
+guid: 7f78c183b2833484b853b82cd69d15f7
+folderAsset: yes
+timeCreated: 1523442353
+>>>>>>> dcf79c552b8a589675868a9e6d9c218848ef3333:JustPutThatThere/Assets/_Animations/Salle.meta
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}
