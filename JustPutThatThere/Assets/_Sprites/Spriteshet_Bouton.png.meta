@@ -118,9 +118,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -689,9 +688,9 @@ TextureImporter:
       name: Spriteshet_Bouton_38
       rect:
         serializedVersion: 2
-        x: 264
+        x: 260
         y: 250
-        width: 59
+        width: 66
         height: 97
       alignment: 9
       pivot: {x: 0.4999995, y: 0.37336305}
@@ -706,7 +705,7 @@ TextureImporter:
         x: 341
         y: 250
         width: 66
-        height: 87
+        height: 97
       alignment: 9
       pivot: {x: 0.5232646, y: 0.41175404}
       border: {x: 0, y: 0, z: 0, w: 0}
