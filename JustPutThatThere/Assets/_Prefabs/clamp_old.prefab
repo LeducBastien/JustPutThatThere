@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222675147670336718}
   - component: {fileID: 114463605405811116}
   m_Layer: 5
-  m_Name: clamp
+  m_Name: clamp_old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
