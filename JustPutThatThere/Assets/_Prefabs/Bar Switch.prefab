@@ -46,7 +46,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &114342684362083408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +145,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114395016044795434}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114808082088285824}
+        m_MethodName: Clicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114808082088285824
@@ -159,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11862f775f7e33346b955b9a2dce7949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  threadAndBar: {fileID: 0}
   onSprite: {fileID: 21300024, guid: f3948bed2993044469d07fd97388bd13, type: 3}
 --- !u!222 &222262624413978738
 CanvasRenderer:

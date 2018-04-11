@@ -12,6 +12,8 @@ public class GatlingCanon : MonoBehaviour
 
     private Action doAction;
 
+    [SerializeField] ThreadAndBar threadAndBar;
+
 	// Use this for initialization
 	void Start()
     {
@@ -22,7 +24,15 @@ public class GatlingCanon : MonoBehaviour
 	void Update()
     {
         doAction();
-           }
+    }
+
+    public void Fire()
+    {
+        if(transform.eulerAngles.z == 90)
+        {
+            threadAndBar.FiredOn();
+        }
+    }
 
     public void SetDestination(string direction)
     {
