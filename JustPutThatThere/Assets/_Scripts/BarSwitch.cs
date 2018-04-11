@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BarSwitch : MonoBehaviour {
 
+    //[SerializeField] Bar bar;
     [SerializeField] Sprite onSprite;
     // Use this for initialization
     void Start () {

@@ -11,12 +11,18 @@ public class Arm : MonoBehaviour {
     private const float DOWN_SPEED = 30f;
     private const float UP_SPEED = 50f;
 
-    private const float MAX_X_DISTANCE = 50f;
+    private const float MAX_X_DISTANCE = 70f;
     private const float HORIZONTAL_SPEED = 25f;
     private const float THREAD_HEIGHT = 100f;
 
     private const float CLAMP_WIDTH = 30f;
     private const float CLAMP_HEIGHT = 30f;
+
+    private const float BABY_WIDTH = 45f;
+    private const float BABY_HEIGHT = 45f;
+
+    private const float HOLE_WIDTH = 60f;
+    private const float HOLE_HEIGHT = 20f;
 
     private const float ENTRANCE_DISTANCE = 100f;
     private const float ENTRANCE_SPEED = 45f;
@@ -26,9 +32,14 @@ public class Arm : MonoBehaviour {
     private bool ready = false;
     public bool onClamp = false;
     public bool clampAttached = false;
+    private bool babyGrabbed = false;
+    private bool babySaved = false;
 
     [SerializeField] GameObject thread;
     [SerializeField] GameObject clamp;
+    [SerializeField] GameObject baby;
+    [SerializeField] GameObject hole;
+    [SerializeField] Transform canvasTransform;
 
     private Action doAction;
 
@@ -167,8 +178,63 @@ public class Arm : MonoBehaviour {
         }
         thread.transform.localPosition = position;
 
-        if(!clampAttached)
+        if (!clampAttached)
             CheckClampCollision();
+        else if (!babyGrabbed)
+            CheckBabyCollision();
+        else if (babyGrabbed && !babySaved)
+            CheckHoleCollision();
+    }
+
+    private void CheckHoleCollision()
+    {
+        var holePosition = hole.transform.position;
+        var babyPosition = baby.transform.position;
+
+        if(babyPosition.y - BABY_HEIGHT / 2 < holePosition.y + HOLE_HEIGHT / 2)
+        {
+            if(babyPosition.x > holePosition.x - HOLE_WIDTH / 2 && babyPosition.x < holePosition.x + HOLE_WIDTH / 2)
+            {
+                babyPosition.x = holePosition.x;
+                baby.transform.position = babyPosition;
+                HoleCollide();
+            }
+        }
+    }
+
+    private void HoleCollide()
+    {
+        var babyTransform = baby.transform;
+        babyTransform.SetParent(canvasTransform, true);
+        babySaved = true;
+        SetModeUp();
+    }
+
+    private void CheckBabyCollision()
+    {
+        var clampPosition = clamp.transform.position;
+        var babyPosition = baby.transform.position;
+
+        if(clampPosition.y - CLAMP_HEIGHT / 2 < babyPosition.y + BABY_HEIGHT / 2)
+        {
+            if(clampPosition.x > babyPosition.x - BABY_WIDTH / 2 && clampPosition.x < babyPosition.x + BABY_WIDTH / 2)
+            {
+                var threadPosition = thread.transform.position;
+                threadPosition.x = babyPosition.x;
+                thread.transform.position = threadPosition;
+
+                BabyCollide();
+            }
+        }
+    }
+
+    private void BabyCollide()
+    {
+        var babyTransform = baby.transform;
+        babyTransform.SetParent(clamp.transform, true);
+
+        babyGrabbed = true;
+        SetModeGrab();
     }
 
     private void CheckClampCollision()
