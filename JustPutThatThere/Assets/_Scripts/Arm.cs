@@ -13,8 +13,19 @@ public class Arm : MonoBehaviour {
 
     private const float MAX_X_DISTANCE = 50f;
     private const float HORIZONTAL_SPEED = 25f;
+    private const float THREAD_HEIGHT = 100f;
 
-    private bool ready = true;
+    private const float CLAMP_WIDTH = 30f;
+    private const float CLAMP_HEIGHT = 30f;
+
+    private const float ENTRANCE_DISTANCE = 100f;
+    private const float ENTRANCE_SPEED = 45f;
+
+    private float startingY;
+
+    private bool ready = false;
+    private bool onClamp = false;
+    private bool clampAttached = false;
 
     [SerializeField] GameObject thread;
     [SerializeField] GameObject clamp;
@@ -23,7 +34,7 @@ public class Arm : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        SetModeVoid();
+        doAction = DoActionVoid;
 	}
 	
 	// Update is called once per frame
@@ -38,6 +49,12 @@ public class Arm : MonoBehaviour {
             ready = false;
             doAction = DoActionDown;
         }
+    }
+
+    public void StartEntrance()
+    {
+        startingY = transform.position.y;
+        doAction = DoActionEntrance;
     }
 
     public void GoRight()
@@ -60,6 +77,24 @@ public class Arm : MonoBehaviour {
     private void DoActionGrab()
     {
         SetModeUp();
+    }
+
+    private void DoActionEntrance()
+    {
+        var position = transform.position;
+        position.y -= ENTRANCE_SPEED * Time.deltaTime;
+        if (position.y < startingY - ENTRANCE_DISTANCE)
+        {
+            position.y = startingY - ENTRANCE_DISTANCE;
+            EndEntrance();
+        }
+        transform.position = position;
+    }
+
+    private void EndEntrance()
+    {
+        ready = true;
+        doAction = DoActionVoid;
     }
 
     private void DoActionRight()
@@ -123,6 +158,29 @@ public class Arm : MonoBehaviour {
             position.y -= DOWN_SPEED * Time.deltaTime;
         }
         thread.transform.localPosition = position;
+
+        CheckClampCollision();
+    }
+
+    private void CheckClampCollision()
+    {
+        var threadPosition = thread.transform.position;
+        var clampPosition = clamp.transform.position;
+
+        if(threadPosition.y - THREAD_HEIGHT / 2 < clampPosition.y + CLAMP_HEIGHT / 2)
+        {
+            if(threadPosition.x > clampPosition.x - CLAMP_WIDTH / 2 && threadPosition.x < clampPosition.x + CLAMP_WIDTH / 2)
+            {
+                threadPosition.x = clampPosition.x;
+                thread.transform.position = threadPosition;
+                ClampCollide();
+            }
+        }
+    }
+
+    private void ClampCollide()
+    {
+        doAction = DoActionVoid;
     }
 
     private void SetModeVoid()
