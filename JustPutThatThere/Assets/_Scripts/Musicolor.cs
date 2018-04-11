@@ -15,6 +15,8 @@ public class Musicolor : MonoBehaviour {
     private readonly List<string> codes = new List<string>();
     private readonly List<Action> actions = new List<Action>();
 
+    [SerializeField] GameObject clapetKey;
+
     Musicolor()
     {
         codes.Add("0102010");
@@ -65,7 +67,7 @@ public class Musicolor : MonoBehaviour {
 
     private void UnlockClapetKey ()
     {
-        print("unlocked clapet key");
+        clapetKey.SetActive(true);
     }
 
     // Use this for initialization

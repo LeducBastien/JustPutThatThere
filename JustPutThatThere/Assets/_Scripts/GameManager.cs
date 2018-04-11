@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
     private float timer = 0;
     public bool pustuleButtonActivated = false;
     public bool gameOver = false;
+    public bool gatlingDoorOpen = false;
+    public bool barFell = false;
 
 
 
