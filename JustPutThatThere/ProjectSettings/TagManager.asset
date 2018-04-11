@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3172909183
+    locked: 0
+  - name: MachineBack
+    uniqueID: 4021717169
+    locked: 0
+  - name: Interior
+    uniqueID: 930529503
+    locked: 0
+  - name: MachineFront
+    uniqueID: 2991226635
+    locked: 0
+  - name: Buttons
+    uniqueID: 895512187
+    locked: 0
