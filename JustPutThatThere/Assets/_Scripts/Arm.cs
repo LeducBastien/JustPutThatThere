@@ -24,8 +24,8 @@ public class Arm : MonoBehaviour {
     private float startingY;
 
     private bool ready = false;
-    private bool onClamp = false;
-    private bool clampAttached = false;
+    public bool onClamp = false;
+    public bool clampAttached = false;
 
     [SerializeField] GameObject thread;
     [SerializeField] GameObject clamp;
@@ -41,6 +41,14 @@ public class Arm : MonoBehaviour {
 	void Update () {
         doAction();
 	}
+
+    public void AttachClamp()
+    {
+        var clampTransform = clamp.transform;
+        clampTransform.SetParent(thread.transform, true);
+        clampAttached = true;
+        SetModeUp();
+    }
 
     public void Descend()
     {
@@ -159,7 +167,8 @@ public class Arm : MonoBehaviour {
         }
         thread.transform.localPosition = position;
 
-        CheckClampCollision();
+        if(!clampAttached)
+            CheckClampCollision();
     }
 
     private void CheckClampCollision()
@@ -180,6 +189,7 @@ public class Arm : MonoBehaviour {
 
     private void ClampCollide()
     {
+        onClamp = true;
         doAction = DoActionVoid;
     }
 
