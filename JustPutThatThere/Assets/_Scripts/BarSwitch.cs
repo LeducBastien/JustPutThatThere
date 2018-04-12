@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BarSwitch : MonoBehaviour {
 
-    //[SerializeField] Bar bar;
+    [SerializeField] ThreadAndBar threadAndBar;
     [SerializeField] Sprite onSprite;
     // Use this for initialization
     void Start () {
@@ -19,6 +19,7 @@ public class BarSwitch : MonoBehaviour {
     public void Clicked()
     {
         GameManager.Instance.barFell = true;
+        threadAndBar.StartEntrance();
         GetComponent<SpriteRenderer>().sprite = onSprite;
     }
 }
