@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NumPad : MonoBehaviour {
 
@@ -16,7 +16,7 @@ public class NumPad : MonoBehaviour {
     AudioSource devilAudio;
     AudioSource boobsAudio;
 
-    [SerializeField] Text display;
+    [SerializeField] TextMeshProUGUI display;
     [SerializeField] GameObject bigRedButton;
     [SerializeField] GatlingBase gatlingBase;
 
