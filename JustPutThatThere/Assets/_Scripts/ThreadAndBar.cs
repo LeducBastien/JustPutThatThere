@@ -20,6 +20,8 @@ public class ThreadAndBar : MonoBehaviour {
     private bool flying = false;
 
     [SerializeField] GameObject thread;
+    [SerializeField] GameObject transistorButton;
+    [SerializeField] Clamp clamp;
 
     private Action doAction;
     // Use this for initialization
@@ -67,6 +69,15 @@ public class ThreadAndBar : MonoBehaviour {
 
     private void TouchTop()
     {
+        if(GameManager.Instance.roomButtonHere)
+        {
+            if(GameManager.Instance.lollipopHere)
+            {
+                GameManager.Instance.lollipopActivated = true;
+                clamp.StartEntrance();
+                transistorButton.SetActive(true);
+            }
+        }
         doAction = DoActionComeBack;
     }
 
