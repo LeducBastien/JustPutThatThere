@@ -1352,6 +1352,9 @@ MonoBehaviour:
   gameOver: 0
   gatlingDoorOpen: 0
   barFell: 0
+  roomButtonHere: 0
+  lollipopHere: 0
+  lollipopActivated: 0
 --- !u!4 &2011849296
 Transform:
   m_ObjectHideFlags: 0
