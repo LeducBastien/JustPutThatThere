@@ -41,6 +41,8 @@ public class Arm : MonoBehaviour {
     [SerializeField] GameObject hole;
     [SerializeField] Transform canvasTransform;
 
+    AudioSource armdownSound;
+
     private Action doAction;
 
     // Use this for initialization
@@ -65,6 +67,7 @@ public class Arm : MonoBehaviour {
     {
         if (ready)
         {
+            armdownSound.Play();
             ready = false;
             doAction = DoActionDown;
         }
@@ -78,14 +81,20 @@ public class Arm : MonoBehaviour {
 
     public void GoRight()
     {
-        if(ready)
+        if (ready)
+        {
+            armdownSound.Play();
             doAction = DoActionRight;
+        }
     }
 
     public void GoLeft()
     {
-        if(ready)
+        if (ready)
+        {
+            armdownSound.Play();
             doAction = DoActionLeft;
+        }
     }
 
     private void SetModeGrab()
@@ -161,6 +170,7 @@ public class Arm : MonoBehaviour {
 
     private void SetModeUp()
     {
+        armdownSound.Play();
         doAction = DoActionUp;
     }
 
