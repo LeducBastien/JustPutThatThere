@@ -37,7 +37,7 @@ public class Arm : MonoBehaviour {
 
     [SerializeField] GameObject thread;
     [SerializeField] GameObject clamp;
-    [SerializeField] GameObject baby;
+    [SerializeField] Baby baby;
     [SerializeField] GameObject hole;
     [SerializeField] Transform canvasTransform;
 
@@ -234,6 +234,7 @@ public class Arm : MonoBehaviour {
         babyTransform.SetParent(clamp.transform, true);
 
         babyGrabbed = true;
+        baby.SetSprite("grabbed");
         SetModeGrab();
     }
 

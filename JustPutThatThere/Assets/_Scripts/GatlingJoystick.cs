@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class GatlingJoystick : MonoBehaviour, IPointerDownHandler
@@ -12,14 +13,23 @@ public class GatlingJoystick : MonoBehaviour, IPointerDownHandler
     private float startingX;
     private float startingY;
 
+    AudioSource joystickSound;
+
     [SerializeField] GatlingCanon gatlingCanon;
+
+    private Image image;
+
+    [SerializeField] Sprite leftSprite;
+    [SerializeField] Sprite downSprite;
+    [SerializeField] Sprite rightSprite;
 
     private Action doAction;
 	// Use this for initialization
 	void Start()
-   {
+    {
        doAction = DoActionVoid;
-          }
+       image = GetComponent<Image>();
+    }
 	
 	// Update is called once per frame
 	void Update()
@@ -63,16 +73,22 @@ public class GatlingJoystick : MonoBehaviour, IPointerDownHandler
     private void ToLeft()
     {
         gatlingCanon.SetDestination("left");
+        image.sprite = leftSprite;
+        joystickSound.Play();
     }
 
     private void ToRight()
     {
         gatlingCanon.SetDestination("right");
+        image.sprite = rightSprite;
+        joystickSound.Play();
     }
 
     private void ToBottom()
     {
         gatlingCanon.SetDestination("bottom");
+        image.sprite = downSprite;
+        joystickSound.Play();
     }
 
     public void OnPointerDown(PointerEventData eventData)
