@@ -24,7 +24,7 @@ public class ClapetKey : MonoBehaviour {
         if(!GameManager.Instance.gatlingDoorOpen)
         {
             GameManager.Instance.gatlingDoorOpen = true;
-            gatlingDoor.Open();
+            gatlingDoor.enabled = true;
         }
 
         gatlingController.SetActive(true);
