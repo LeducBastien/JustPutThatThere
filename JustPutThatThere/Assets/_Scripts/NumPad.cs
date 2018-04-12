@@ -19,11 +19,12 @@ public class NumPad : MonoBehaviour {
     [SerializeField] TextMeshProUGUI display;
     [SerializeField] GameObject bigRedButton;
     [SerializeField] GatlingBase gatlingBase;
+    [SerializeField] GameObject simonInstance;
 
     NumPad()
     {
         codes.Add("80085");
-        actions.Add(UnlockCeilingTrap);
+        actions.Add(UnlockSimonGame);
 
         codes.Add("996678");
         actions.Add(UnlockMachinegun);
@@ -70,10 +71,11 @@ public class NumPad : MonoBehaviour {
         }
     }
 
-    private void UnlockCeilingTrap ()
+    private void UnlockSimonGame ()
     {
         GameManager.Instance.roomButtonHere = true;
         boobsAudio.Play();
+        simonInstance.SetActive(true);
     }
 
     private void UnlockBigRedButton ()

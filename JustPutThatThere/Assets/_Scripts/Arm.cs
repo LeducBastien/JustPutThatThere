@@ -2,27 +2,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using DG.Tweening;
 public class Arm : MonoBehaviour {
 
     private const float STARTING_Y = 50f;
 
-    private const float DESCEND_DISTANCE = 100f;
-    private const float DOWN_SPEED = 30f;
-    private const float UP_SPEED = 50f;
+    private const float DESCEND_DISTANCE = 350f;
+    private const float DOWN_SPEED = 90f;
+    private const float UP_SPEED = 60f;
 
-    private const float MAX_X_DISTANCE = 70f;
-    private const float HORIZONTAL_SPEED = 25f;
+    private const float MAX_X_DISTANCE = 140f;
+    private const float HORIZONTAL_SPEED = 50f;
     private const float THREAD_HEIGHT = 100f;
 
     private const float CLAMP_WIDTH = 30f;
     private const float CLAMP_HEIGHT = 30f;
 
-    private const float BABY_WIDTH = 45f;
-    private const float BABY_HEIGHT = 45f;
+    private const float BABY_WIDTH = 300.9f;
+    private const float BABY_HEIGHT = 300.9f;
 
-    private const float HOLE_WIDTH = 60f;
-    private const float HOLE_HEIGHT = 20f;
+    private const float HOLE_WIDTH = 221.3f;
+    private const float HOLE_HEIGHT = 220.5f;
 
     private const float ENTRANCE_DISTANCE = 100f;
     private const float ENTRANCE_SPEED = 45f;
@@ -32,18 +33,31 @@ public class Arm : MonoBehaviour {
     private bool ready = false;
     public bool onClamp = false;
     public bool clampAttached = false;
-    private bool babyGrabbed = false;
+    public bool babyGrabbed = false;
     private bool babySaved = false;
+    private bool right = false;
 
     [SerializeField] GameObject thread;
-    [SerializeField] GameObject clamp;
+    [SerializeField] public GameObject clamp;
     [SerializeField] Baby baby;
     [SerializeField] GameObject hole;
     [SerializeField] Transform canvasTransform;
 
     [SerializeField] AudioSource armdownSound;
+    [SerializeField] Animator babyAnimator;
+
+    [SerializeField] Transform babyWinPlace;
+    [SerializeField] Sprite babyWinSprite;
+
+    public static Arm Instance;
 
     private Action doAction;
+
+    private void Awake()
+    {
+        if (Instance) return;
+        Instance = this;
+    }
 
     // Use this for initialization
     void Start () {
@@ -81,10 +95,14 @@ public class Arm : MonoBehaviour {
 
     public void GoRight()
     {
+
         if (ready)
         {
+            right = true;
             armdownSound.Play();
             doAction = DoActionRight;
+            GameManager.Instance.armLeft = false;
+
         }
     }
 
@@ -92,8 +110,11 @@ public class Arm : MonoBehaviour {
     {
         if (ready)
         {
+            right = false;
+
             armdownSound.Play();
             doAction = DoActionLeft;
+            GameManager.Instance.armLeft = true;
         }
     }
 
@@ -155,6 +176,7 @@ public class Arm : MonoBehaviour {
 
     private void DoActionUp()
     {
+        right = false;
         var position = thread.transform.localPosition;
         if(position.y > STARTING_Y)
         {
@@ -180,23 +202,53 @@ public class Arm : MonoBehaviour {
         if (position.y < STARTING_Y - DESCEND_DISTANCE)
         {
             position.y = STARTING_Y - DESCEND_DISTANCE;
-            SetModeGrab();
+
+            if (GameManager.Instance.armLeft == true)
+            {
+                ClampCollide();
+            }
+            else
+                SetModeGrab();
         }
         else
         {
             position.y -= DOWN_SPEED * Time.deltaTime;
+
         }
         thread.transform.localPosition = position;
 
+        if (babyGrabbed && right)
+        {
+            enabled = false;
+            baby.transform.DOMove(hole.transform.position, 1f).SetEase(Ease.InQuint).OnComplete(() =>
+            {
+                baby.transform.position = babyWinPlace.position;
+                babyGrabbed = false;
+                baby.GetComponent<Image>().sprite = babyWinSprite;
+                baby.transform.parent = babyWinPlace;
+                StartCoroutine(BackToTitleScreen());
+            });
+
+            return;
+        }
+
+       
+   
         if (!clampAttached)
-            CheckClampCollision();
-        else if (!babyGrabbed)
-            CheckBabyCollision();
-        else if (babyGrabbed && !babySaved)
-            CheckHoleCollision();
+                CheckClampCollision();
+            else if (!babyGrabbed)
+                CheckBabyCollision();
+            else if (babyGrabbed && !babySaved)
+                CheckHoleCollision();
     }
 
-    private void CheckHoleCollision()
+IEnumerator BackToTitleScreen()
+{
+    yield return new WaitForSeconds(3f);
+    GameManager.Instance.LoadTitleScreen();
+}
+
+private void CheckHoleCollision()
     {
         var holePosition = hole.transform.position;
         var babyPosition = baby.transform.position;
@@ -241,10 +293,10 @@ public class Arm : MonoBehaviour {
     private void BabyCollide()
     {
         var babyTransform = baby.transform;
-        babyTransform.SetParent(clamp.transform, true);
+        babyTransform.localPosition = Vector3.zero;
 
         babyGrabbed = true;
-        baby.SetSprite("grabbed");
+        babyAnimator.enabled = false;
         SetModeGrab();
     }
 
@@ -268,6 +320,7 @@ public class Arm : MonoBehaviour {
     {
         onClamp = true;
         doAction = DoActionVoid;
+        AttachClamp();
     }
 
     private void SetModeVoid()

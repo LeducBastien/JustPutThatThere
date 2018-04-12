@@ -6,10 +6,10 @@ using UnityEngine;
 public class ThreadAndBar : MonoBehaviour {
 
     private const float GRAVITY = 200f;
-    private const float FALL_DISTANCE = 200f;
+    private const float FALL_DISTANCE = 150f;
 
 
-    private const float MAX_ANGLE = 90f;
+    private const float MAX_ANGLE = 70f;
     private const float FLY_SPEED = 140f;
 
     private float startingY;
@@ -22,6 +22,8 @@ public class ThreadAndBar : MonoBehaviour {
     [SerializeField] GameObject thread;
     [SerializeField] GameObject transistorButton;
     [SerializeField] Clamp clamp;
+    [SerializeField] Animator lollipopAnimator;
+    [SerializeField] GameObject diagButton;
 
     private Action doAction;
     // Use this for initialization
@@ -71,12 +73,11 @@ public class ThreadAndBar : MonoBehaviour {
     {
         if(GameManager.Instance.roomButtonHere)
         {
-            if(GameManager.Instance.lollipopHere)
-            {
-                GameManager.Instance.lollipopActivated = true;
-                clamp.StartEntrance();
-                transistorButton.SetActive(true);
-            }
+            GameManager.Instance.lollipopActivated = true;
+            //clamp.StartEntrance();
+            //transistorButton.SetActive(true);
+            lollipopAnimator.SetBool("TRUE", true);
+            diagButton.SetActive(false);
         }
         doAction = DoActionComeBack;
     }

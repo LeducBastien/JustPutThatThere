@@ -79,9 +79,10 @@ public class GatlingJoystick : MonoBehaviour, IPointerDownHandler
 
     private void ToRight()
     {
-        gatlingCanon.SetDestination("right");
         image.sprite = rightSprite;
         joystickSound.Play();
+        gatlingCanon.SetDestination("right");
+
     }
 
     private void ToBottom()

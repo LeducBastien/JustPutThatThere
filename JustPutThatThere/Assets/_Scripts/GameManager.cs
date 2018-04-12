@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
     public bool roomButtonHere = false;
     public bool lollipopHere = false;
     public bool lollipopActivated = false;
+    public bool armLeft = false;
 
 
 
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour {
 
     private void Update()
     {
+        if (!helpButtonInstance) return;
         timer += Time.deltaTime;
         if (Input.anyKey)
             timer = 0;
@@ -49,4 +51,10 @@ public class GameManager : MonoBehaviour {
 	public void LoadMainGame () {
 		SceneManager.LoadScene (2);
 	}
+
+    public void Quit()
+    {
+        Application.Quit();
+
+    }
 }

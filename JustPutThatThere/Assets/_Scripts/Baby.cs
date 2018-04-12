@@ -27,7 +27,14 @@ public class Baby : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        doAction();
+        if (Arm.Instance.babyGrabbed)
+        {
+            transform.position = Arm.Instance.clamp.transform.position + Vector3.up * -150;
+        }
+        else
+            doAction();
+        
+
 	}
 
     public void SetSprite(string state)
@@ -62,4 +69,5 @@ public class Baby : MonoBehaviour {
     {
 
     }
+
 }

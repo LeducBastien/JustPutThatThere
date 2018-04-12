@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class BarSwitch : MonoBehaviour {
 
@@ -19,7 +21,8 @@ public class BarSwitch : MonoBehaviour {
     public void Clicked()
     {
         GameManager.Instance.barFell = true;
+        GetComponent<Image>().sprite = onSprite;
+
         threadAndBar.StartEntrance();
-        GetComponent<SpriteRenderer>().sprite = onSprite;
     }
 }

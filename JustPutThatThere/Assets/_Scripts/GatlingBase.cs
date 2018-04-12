@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class GatlingBase : MonoBehaviour {
 
-    private const float DOWN_SPEED = 25f;
-    private const float DOWN_DISTANCE = 80f;
+    private const float DOWN_SPEED = 50f;
+    private const float DOWN_DISTANCE = 160f;
 
     private float startingY;
 

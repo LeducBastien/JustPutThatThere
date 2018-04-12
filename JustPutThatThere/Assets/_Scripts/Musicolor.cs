@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Musicolor : MonoBehaviour {
 
-    private const int RESET_TIME = 3;
+    private const int RESET_TIME = 2;
 
     private float timer = 0;
     private bool timerStarted = false;
