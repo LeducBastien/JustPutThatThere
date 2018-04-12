@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour {
     public bool gameOver = false;
     public bool gatlingDoorOpen = false;
     public bool barFell = false;
+    public bool roomButtonHere = false;
+    public bool lollipopHere = false;
+    public bool lollipopActivated = false;
 
 
 
