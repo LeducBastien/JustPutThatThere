@@ -5,13 +5,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class TransistorButton : MonoBehaviour, IPointerDownHandler {
- 
-    //private const int MAX_POWER = 90;
 
     private const float ANGLE_MULTIPLIER = 0.5f;
 
+    private const float REQUIRED_SCREWAGE = -1200f;
+
     private float angle = 0;
+    private float screwage = 0;
     private float lastAngle;
+
+    [SerializeField] Arm arm;
 
     private Action doAction;
 
@@ -39,6 +42,7 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
     {
         Vector3 mousePosition = Input.mousePosition;
         Vector3 buttonPosition = transform.position;
+        float screwageStart = angle;
         float currentAngle = AngleTo(mousePosition, buttonPosition);
         
         if (Mathf.Abs(currentAngle - lastAngle) > 180)
@@ -53,6 +57,7 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
         {
             angle += (currentAngle - lastAngle) * ANGLE_MULTIPLIER;
         }
+        UpdateScrew(angle - screwageStart);
         lastAngle = currentAngle;
         UpdateDisplay();
         if (Input.GetMouseButtonUp(0)) {
@@ -60,10 +65,30 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
         }
     }
 
+    private void UpdateScrew(float addedScrewage)
+    {
+        if (!arm.clampAttached)
+        {
+            if (arm.onClamp)
+            {
+                screwage += addedScrewage;
+                if (screwage <= REQUIRED_SCREWAGE)
+                {
+                    AttachClamp();
+                }
+            }
+        }
+    }
+
     private void UpdateDisplay ()
     {
         float neededAngle = angle;
         transform.eulerAngles = Vector3.forward * neededAngle;
+    }
+
+    private void AttachClamp()
+    {
+        arm.AttachClamp();
     }
 
     private float AngleTo (Vector3 mousePosition, Vector3 buttonPosition)
