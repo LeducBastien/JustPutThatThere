@@ -14,9 +14,15 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
     private float screwage = 0;
     private float lastAngle;
 
+    private float soundTimer = 0;
+    private const float SOUND_DURATION = 2f;
+
     [SerializeField] Arm arm;
 
     private Action doAction;
+
+    AudioSource turnSound;
+    AudioSource clampAttachedSound;
 
     // Use this for initialization
     void Start () {
@@ -38,8 +44,19 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
     {
     }
 
+    private void ManageSound()
+    {
+        soundTimer += Time.deltaTime;
+        if(soundTimer >= SOUND_DURATION)
+        {
+            soundTimer = 0;
+            turnSound.Play();
+        }
+    }
+
     private void DoActionGrabbed ()
     {
+        ManageSound();
         Vector3 mousePosition = Input.mousePosition;
         Vector3 buttonPosition = transform.position;
         float screwageStart = angle;
@@ -88,6 +105,7 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
 
     private void AttachClamp()
     {
+        clampAttachedSound.Play();
         arm.AttachClamp();
     }
 
