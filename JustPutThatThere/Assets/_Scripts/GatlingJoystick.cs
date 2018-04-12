@@ -13,7 +13,7 @@ public class GatlingJoystick : MonoBehaviour, IPointerDownHandler
     private float startingX;
     private float startingY;
 
-    AudioSource joystickSound;
+    [SerializeField] AudioSource joystickSound;
 
     [SerializeField] GatlingCanon gatlingCanon;
 

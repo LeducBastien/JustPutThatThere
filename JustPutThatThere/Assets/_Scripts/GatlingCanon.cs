@@ -30,6 +30,7 @@ public class GatlingCanon : MonoBehaviour
     {
         if(transform.eulerAngles.z == 90)
         {
+
             threadAndBar.FiredOn();
         }
     }
