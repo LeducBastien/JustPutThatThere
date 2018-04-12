@@ -21,8 +21,8 @@ public class TransistorButton : MonoBehaviour, IPointerDownHandler {
 
     private Action doAction;
 
-    AudioSource turnSound;
-    AudioSource clampAttachedSound;
+    [SerializeField] AudioSource turnSound;
+    [SerializeField] AudioSource clampAttachedSound;
 
     // Use this for initialization
     void Start () {
