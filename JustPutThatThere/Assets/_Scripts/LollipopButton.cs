@@ -17,6 +17,7 @@ public class LollipopButton : MonoBehaviour {
 
     public void Clicked()
     {
+        GameManager.Instance.lollipopHere = true;
         lollipop.SetActive(true);
     }
 }
