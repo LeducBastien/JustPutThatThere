@@ -41,7 +41,7 @@ public class Arm : MonoBehaviour {
     [SerializeField] GameObject hole;
     [SerializeField] Transform canvasTransform;
 
-    AudioSource armdownSound;
+    [SerializeField] AudioSource armdownSound;
 
     private Action doAction;
 

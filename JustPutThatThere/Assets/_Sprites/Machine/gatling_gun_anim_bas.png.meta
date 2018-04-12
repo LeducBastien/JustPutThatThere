@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: d0b724bfa3c728d458a3e871c3619a7e
-timeCreated: 1523490948
+<<<<<<< HEAD
+guid: 831af77b298901948b559b39cec8ab7b
+timeCreated: 1523524061
+=======
+guid: c7b33186d2a3f41449c44c1fad125516
+timeCreated: 1523524009
+>>>>>>> 742a7ac6b07483223bace84681488ddcfae1aa6f
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: gatling_gun_anim_0
-    21300002: gatling_gun_anim_1
-    21300004: gatling_gun_anim_2
-    21300006: gatling_gun_anim_3
+    21300000: gatling_gun_anim_bas_0
+    21300002: gatling_gun_anim_bas_1
+    21300004: gatling_gun_anim_bas_2
+    21300006: gatling_gun_anim_bas_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -84,13 +89,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gatling_gun_anim_0
+      name: gatling_gun_anim_bas_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 315.25
-        height: 129
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -98,13 +103,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gatling_gun_anim_1
+      name: gatling_gun_anim_bas_1
       rect:
         serializedVersion: 2
         x: 315
         y: 0
         width: 315.25
-        height: 129
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,13 +117,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gatling_gun_anim_2
+      name: gatling_gun_anim_bas_2
       rect:
         serializedVersion: 2
         x: 630
         y: 0
         width: 315.25
-        height: 129
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,13 +131,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gatling_gun_anim_3
+      name: gatling_gun_anim_bas_3
       rect:
         serializedVersion: 2
         x: 945
         y: 0
         width: 315.25
-        height: 129
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
