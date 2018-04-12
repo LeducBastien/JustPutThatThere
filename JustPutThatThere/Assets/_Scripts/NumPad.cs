@@ -72,7 +72,7 @@ public class NumPad : MonoBehaviour {
 
     private void UnlockCeilingTrap ()
     {
-        print("unlocking trap");
+        GameManager.Instance.roomButtonHere = true;
         boobsAudio.Play();
     }
 
