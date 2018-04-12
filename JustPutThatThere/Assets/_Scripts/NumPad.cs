@@ -13,6 +13,8 @@ public class NumPad : MonoBehaviour {
     private readonly List<string> codes = new List<string>();
     private readonly List<Action> actions = new List<Action>();
 
+    AudioSource devilAudio;
+    AudioSource boobsAudio;
 
     [SerializeField] Text display;
     [SerializeField] GameObject bigRedButton;
@@ -71,20 +73,25 @@ public class NumPad : MonoBehaviour {
     private void UnlockCeilingTrap ()
     {
         print("unlocking trap");
+        boobsAudio.Play();
     }
 
     private void UnlockBigRedButton ()
     {
         bigRedButton.SetActive(true);
+        devilAudio.Play();
     }
 
     // Use this for initialization
     void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        devilAudio = GetComponents<AudioSource>()[0];
+        boobsAudio = GetComponents<AudioSource>()[1];
+
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }

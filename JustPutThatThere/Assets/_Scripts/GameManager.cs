@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour {
     {
         if (Instance) return;
         Instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
 
     }
 

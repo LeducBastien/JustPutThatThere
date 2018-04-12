@@ -2,14 +2,9 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DecoPlate : MonoBehaviour, IDragHandler, IEndDragHandler
+public class DecoPlate : MonoBehaviour
 {
-    public void OnDrag(PointerEventData eventData)
-    {
-        transform.position = Input.mousePosition;
-    }
-
-	public void OnEndDrag(PointerEventData eventData)
+	public void OnClick()
 	{
 		this.gameObject.GetComponentInParent<Animator> ().SetBool ("GLISS", true);
 	}
